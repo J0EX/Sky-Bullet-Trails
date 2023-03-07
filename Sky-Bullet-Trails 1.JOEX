@@ -1,0 +1,138 @@
+-- Sky & Bullet Trails </>
+
+local skybox = Instance.new("Sky")
+skybox.Parent = game.Lighting
+skybox.SkyboxBk = "http://www.roblox.com/asset/?id=159454299"
+skybox.SkyboxDn = "http://www.roblox.com/asset/?id=159454296"
+skybox.SkyboxFt = "http://www.roblox.com/asset/?id=159454293"
+skybox.SkyboxLf = "http://www.roblox.com/asset/?id=159454286"
+skybox.SkyboxRt = "http://www.roblox.com/asset/?id=159454300"
+skybox.SkyboxUp = "http://www.roblox.com/asset/?id=159454288"
+skybox.StarCount = 100
+
+game:GetService("ReplicatedStorage").Bullet.Trail.Lifetime = 20
+game:GetService("ReplicatedStorage").Bullet.Trail.Brightness = 100
+game:GetService("ReplicatedStorage").Bullet.Trail.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(85, 0, 255)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(229, 111, 255))
+})
+
+game:GetService("ReplicatedStorage").Arrow.Trail.Lifetime = 20
+game:GetService("ReplicatedStorage").Arrow.Trail.Brightness = 100
+game:GetService("ReplicatedStorage").Arrow.Trail.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(85, 0, 255)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(229, 111, 255))
+})
+
+game:GetService("ReplicatedStorage").Laser.Trail.Lifetime = 20
+game:GetService("ReplicatedStorage").Laser.Trail.Brightness = 100
+game:GetService("ReplicatedStorage").Laser.Trail.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(85, 0, 255)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(229, 111, 255))
+})
+
+-- Purple UIs </>
+
+game:GetService("Workspace").Terrain.Clouds.Color = Color3.fromRGB(255, 72, 247)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Armor.ItemSlot26.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Armor.ItemSlot27.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Armor.ItemSlot28.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Armor.ItemSlot29.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Hotbar.ItemSlot1.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Hotbar.ItemSlot2.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Hotbar.ItemSlot3.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Hotbar.ItemSlot4.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Hotbar.ItemSlot5.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Hotbar.ItemSlot1.Selected.BackgroundColor3 = Color3.new(204/255, 60/255, 255/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Hotbar.ItemSlot2.Selected.BackgroundColor3 = Color3.new(204/255, 60/255, 255/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Hotbar.ItemSlot3.Selected.BackgroundColor3 = Color3.new(204/255, 60/255, 255/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Hotbar.ItemSlot4.Selected.BackgroundColor3 = Color3.new(204/255, 60/255, 255/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Hotbar.ItemSlot5.Selected.BackgroundColor3 = Color3.new(204/255, 60/255, 255/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Vitals.Energy.BackgroundColor3 = Color3.new(95/255, 15/255, 99/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Vitals.Health.BackgroundColor3 = Color3.new(64/255, 10/255, 172/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Inventory.ItemSlot10.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Inventory.ItemSlot11.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Inventory.ItemSlot12.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Inventory.ItemSlot13.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Inventory.ItemSlot14.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Inventory.ItemSlot15.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Inventory.ItemSlot16.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Inventory.ItemSlot17.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Inventory.ItemSlot18.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Inventory.ItemSlot19.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Inventory.ItemSlot20.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Inventory.ItemSlot21.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Inventory.ItemSlot22.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Inventory.ItemSlot23.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Inventory.ItemSlot24.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Inventory.ItemSlot25.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Inventory.ItemSlot6.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Inventory.ItemSlot7.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Inventory.ItemSlot8.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Inventory.ItemSlot9.BackgroundColor3 = Color3.new(45/255, 11/255, 73/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.SideCategory.ItemInfo.BorderColor3 = Color3.new(0/255, 0/255, 0/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Vitals.BackgroundColor3 = Color3.new(0/255, 0/255, 0/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Vitals.BorderColor3 = Color3.new(0/255, 0/255, 0/255)
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Vitals.BackgroundTransparency = 0.7
+
+-- Remove GC </>
+
+game:GetService("Players").LocalPlayer.PlayerGui.UI.FPS.Crosshair.Visible = false
+
+-- Custom CrossHair </>
+
+local CrossHairX = Drawing.new("Circle")
+
+CrossHairX.Position = Vector2.new(workspace.CurrentCamera.ViewportSize.X / 2, workspace.CurrentCamera.ViewportSize.Y / 2)
+CrossHairX.Color = Color3.fromRGB(29,246,47)
+CrossHairX.Transparency = 1
+CrossHairX.Thickness = 0.1
+CrossHairX.NumSides = 12
+CrossHairX.Radius = 4
+CrossHairX.Visible = true
+CrossHairX.Filled = true
+
+-- CAS </>
+
+local workspace = game:GetService("Workspace")
+
+local fpsArms = workspace.Ignore.FPSArms
+
+local material = Enum.Material.ForceField
+local color = Color3.fromRGB(98, 37, 209)
+
+for _, part in pairs(fpsArms:GetDescendants()) do
+    if part:IsA("BasePart") then
+        part.Material = material
+        part.Color = color
+    end
+end
+
+-- CGS </>
+
+local replicatedStorage = game:GetService("ReplicatedStorage")
+
+local handModels = replicatedStorage:WaitForChild("HandModels")
+
+local material = Enum.Material.ForceField
+local color = Color3.fromRGB(98, 37, 209)
+
+for _, part in pairs(handModels:GetDescendants()) do
+    if part:IsA("BasePart") then
+        part.Material = material
+        part.Color = color
+    end
+end
+
+-- RR </>
+
+local replicatedStorage = game:GetService("ReplicatedStorage")
+local handModels = replicatedStorage.HandModels
+
+local gone = false
+
+for _, descendant in ipairs(handModels:GetDescendants()) do
+    if descendant:IsA("RopeConstraint") then
+        descendant.Visible = gone
+    end
+end
