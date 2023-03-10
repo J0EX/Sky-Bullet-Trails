@@ -88,7 +88,7 @@ CrossHairX.Color = Color3.fromRGB(29,246,47)
 CrossHairX.Transparency = 0.5
 CrossHairX.Thickness = 0.1
 CrossHairX.NumSides = 12
-CrossHairX.Radius = 4
+CrossHairX.Radius = 3.5
 CrossHairX.Visible = true
 CrossHairX.Filled = true
 
