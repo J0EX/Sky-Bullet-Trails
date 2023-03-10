@@ -85,7 +85,7 @@ local CrossHairX = Drawing.new("Circle")
 
 CrossHairX.Position = Vector2.new(workspace.CurrentCamera.ViewportSize.X / 2, workspace.CurrentCamera.ViewportSize.Y / 2)
 CrossHairX.Color = Color3.fromRGB(29,246,47)
-CrossHairX.Transparency = 1
+CrossHairX.Transparency = 0.5
 CrossHairX.Thickness = 0.1
 CrossHairX.NumSides = 12
 CrossHairX.Radius = 4
